@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 html {
     font-family: 'Poppins', sans-serif;
 }

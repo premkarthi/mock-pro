@@ -8,6 +8,28 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      'primary': '#00AEEF',
+      'secondary': '#FFC20E',
+      'lightBg': '#F2F7FD',
+      'white': '#ffffff',
+      'lightBlock': '#666666'
+    },
+    screens: {
+      sm: '768px',
+      md: '900px',
+      lg: '1050px',
+      xl: '1400px',
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '2rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
   },
   plugins: [
     plugin(function({ addComponents }) {
