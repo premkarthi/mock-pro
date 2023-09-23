@@ -1,0 +1,28 @@
+.slick-track {
+    display:flex !important;
+  }
+
+.carousel {
+    height:inherit !important;
+  }
+.slick-slider .slick-next, .slick-slider .slick-prev{
+    width: 32px;
+    height: 32px;
+    display: flex !important;
+    align-items: center;
+}
+.slick-slider .slick-prev{
+    transform: rotate(180deg);
+}
+.slick-slider .slick-prev::before,.slick-slider .slick-next::before{
+    border: 1px solid #444444;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background: white;
+    display: block;
+    content: '→';
+    color: black;
+    font-family: unset;
+    line-height: 1.5;
+}

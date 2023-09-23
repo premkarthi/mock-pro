@@ -46,6 +46,16 @@ export default {
             opacity: '0.8'
           },
         },
+        '.btn-normal':{
+          backgroundColor: 'transparent',
+          border: '1px solid #495057',
+          color: '#221122',
+          '&:hover': {
+            color: '#fff',
+            backgroundColor: '#00AEEF',
+            borderColor: '#00AEEF',
+          },
+        },
         '.btn-secondary': {
           backgroundColor: '#FFC20E',
           color: '#fff',

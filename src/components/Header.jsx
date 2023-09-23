@@ -19,8 +19,8 @@ function Header() {
         </div>
        
         <div className={isActive && device === 'mobile' ? 'items-center md:flex absolute h-54 p-10 top-20 left-0 w-full shadow-md bg-white z-10' : device === 'desktop' ? 'flex items-center'  :'hidden'} >
-          <ul className="md:flex items-center text-sm ">
-            <li className="md:mx-3 flex items-center cursor-pointer mb-5 md:mb-0">
+          <ul className="sm:flex  items-center text-sm ">
+            <li className="md:mx-3 flex items-center cursor-pointer mb-5 sm:mb-0">
               <span>Discover</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ function Header() {
                 />
               </svg>
             </li>
-            <li className="md:mx-3 flex items-center cursor-pointer mb-5 md:mb-0">
+            <li className="md:mx-3 flex items-center cursor-pointer mb-5 sm:mb-0">
               <span>Mentors</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ function Header() {
                 />
               </svg>
             </li>
-            <li className="md:mx-3 flex items-center cursor-pointer mb-5 md:mb-0">
+            <li className="md:mx-3 flex items-center cursor-pointer mb-5 sm:mb-0">
               <span>Learn More</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ function Header() {
               </svg>
             </li>
           </ul>
-          <button className="btn btn-primary mr-5 md:ml-5">Login</button>
+          <button className="btn btn-primary mr-5 sm:ml-5">Login</button>
           <button className="btn btn-transparent">Signup</button>
         </div>
 

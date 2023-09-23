@@ -1,7 +1,5 @@
 import { useState } from "react"
 import Mentor from "./Mentor"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function MentorsList() {
@@ -19,22 +17,24 @@ function MentorsList() {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
+              arrows: false
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 2.2,
               slidesToScroll: 2,
-              initialSlide: 2
+              initialSlide: 2,
+              arrows: false
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1.3,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              arrows: false
             }
           }
         ]
@@ -132,7 +132,7 @@ access to our mentors, and soon we will have many more resources available.</p>
             </div>
 
             <div className="my-5">
-                <Slider {...settings} className="overflow-hidden md:overflow-visible">
+                <Slider {...settings} className="overflow-hidden md:overflow-visible md:px-3">
                 {
                     mentors.map((item,i)=>{
                         return <Mentor key={i} item={item}/>
@@ -140,6 +140,8 @@ access to our mentors, and soon we will have many more resources available.</p>
                 }
                 </Slider>
             </div>
+
+            <button className="btn btn-normal py-3 mx-auto md:w-auto md:ml-auto block md:mr-6">View All Mentors</button>
         </div>
     </div>
   )

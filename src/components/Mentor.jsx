@@ -87,7 +87,7 @@ function Mentor(props) {
               );
             })}
         </p>
-        <button className="btn btn-primary w-full">Book Now</button>
+        <button className="btn btn-primary w-full py-3">Book Now</button>
       </div>
     </div>
   );
