@@ -8,10 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FrequentlyAskQues from './components/FrequentlyAskQues'
 import Footer from './components/Footer'
+// import Sigup from './components/signup/Sigup'
 
 function App() {
-
-  
   return (
     <>
       <Header />
@@ -21,6 +20,8 @@ function App() {
       <Tesitmonals />
       <FrequentlyAskQues />
       <Footer />
+
+      {/* <Sigup /> */}
     </>
   )
 }
